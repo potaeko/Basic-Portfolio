@@ -1,3 +1,5 @@
+
+
 body {
   font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
   font-size: 18px;
@@ -11,12 +13,7 @@ body {
   margin: 0;
 }
 
-/* sticky footer styling */
-
-/* http://ryanfait.com/html5-sticky-footer/ */
-
-html,
-body {
+html,body {
   height: 100%;
 }
 
@@ -27,16 +24,10 @@ body {
   margin: 0 auto -105px;
 }
 
-footer,
-.push {
 
-  height: 105px;
-}
-
-/* end sticky footer styling */
-
-/* start hover styling */
-
+/*==================================
+              Hover State 
+===================================*/
 #logo:hover,
 input[type=submit]:hover {
   background: #5e7f7e;
@@ -48,19 +39,18 @@ nav a:hover {
 
 .social:hover {
   cursor: pointer;
-  opacity: 0.8;
+  opacity: 0.2;
 }
 
-/* end hover styling */
 
-/* general styling */
-
+/*=================================
+            General CSS 
+==================================*/
 .container {
   width: 100%;
   max-width: 960px;
   margin: 0 auto;
   clear: both;
-
 }
 
 h1,
@@ -94,8 +84,9 @@ h3 {
   font-size: 22px;
 }
 
-/* header */
-
+/*==================================
+              Header 
+===================================*/
 #masthead {
   position: fixed;
   z-index: 99;
@@ -105,7 +96,7 @@ h3 {
   color: #fff;
   border-bottom: 4px solid gold;
   /*background*/
-background: url("../images/escheresque_ste.png");
+  background: url("../images/escheresque_ste.png");
 
 }
 
@@ -144,21 +135,27 @@ nav a:first-child {
   border-left: 0 none;
 }
 
-/* footer */
 
-footer {
-  padding: 30px 0;
-  clear: both;
-  font-size: 12px;
-  color: #fff;
-  color: #ccc;
-  text-align: center;
-  background: url("../images/escheresque_ste.png");
-  border-top: 8px solid gold;
+/*=================================
+           Main Section
+==================================*/
+#main-container {
+  padding-top: 130px;
 }
 
-/* sidebar */
+.main-section {
+  float: left;
+  width: 100%;
+  max-width: 650px;
+  padding: 30px;
+  margin: 0 0 40px;
+  background: url("../images/ignasi_pattern_s.png");
+  border: 1px solid #ddd;
+}
 
+/*=================================
+           Sidebar Section
+==================================*/
 .sidebar {
   float: right;
   width: 100%;
@@ -188,22 +185,9 @@ h3,
   margin-right: 0;
 }
 
-/* main */
-
-#main-container {
-  padding-top: 130px;
-}
-
-.main-section {
-  float: left;
-  width: 100%;
-  max-width: 650px;
-  padding: 30px;
-  margin: 0 0 40px;
-  background: url("../images/ignasi_pattern_s.png");
-  border: 1px solid #ddd;
-}
-/*Portfolio*/
+/*=================================
+          Portfolio Page
+==================================*/
 .work {
   position: relative;
   float: left;
@@ -235,6 +219,7 @@ h3,
   background: #4aaaa5;
   border-bottom: 0;
 }
+
 .auth-image {
   float: left;
   width: 200px;
@@ -244,8 +229,9 @@ h3,
 }
 
 
-/* contact page */
-
+/*==================================
+           Contact Page 
+===================================*/
 #contact-form ul {
   margin-bottom: 20px;
 }
@@ -282,4 +268,18 @@ input[type=submit] {
   cursor: pointer;
   background: #4aaaa5;
   border: 0 none;
+}
+
+/*=================================
+               Footer 
+==================================*/
+footer {
+  padding: 30px 0;
+  clear: both;
+  font-size: 12px;
+  color: #fff;
+  color: #ccc;
+  text-align: center;
+  background: url("../images/escheresque_ste.png");
+  border-top: 8px solid gold;
 }
